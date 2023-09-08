@@ -1,39 +1,61 @@
 # RTOS
 
 #### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+手动移植FreeRTOS，测试完成
 
-#### 软件架构
-软件架构说明
+#### 软件
+Clion CubeMX 
 
+FreeRTOS源码：https://github.com/FreeRTOS/FreeRTOS-Kernel
 
-#### 安装教程
+#### 方法
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  包含头文件：
+               set(USER_INC FreeRTOS_M3_gcc/inc FreeRTOS_M3_gcc/portable/ARM_CM3)
+               set(USER_SRC "FreeRTOS_M3_gcc/portable/ARM_CM3/*.*" "FreeRTOS_M3_gcc/portable/MemMang/*.*" "FreeRTOS_M3_gcc/src/*.*")
 
-#### 使用说明
+2.  引用头文件：
+                #include "FreeRTOS.h"
+                #include "task.h"
+3.  
+          stm32f1xx_it.c中添加以下代码：
+          #include "FreeRTOS.h"
+          #include "task.h"
+          extern void xPortSysTickHandler(void);
+    
+          删除 SVC_Handler() 和 PendSV_Handler()两个函数
+    
+          SysTick_Handler中添加：
+          if(xTaskGetSchedulerState()!=taskSCHEDULER_NOT_STARTED)
+          {
+              xPortSysTickHandler();
+          }
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+4.  任务：
+        //任务1
+        void vTask1(void *pvParameters)
+        {
+          for(;;)
+          {
+            HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+            vTaskDelay(100);
+        
+          }
+        }
+        //任务2
+        void vTask2(void *pvParameters)
+        {
+          for(;;)
+          {
+            HAL_GPIO_TogglePin(GPIOA,GPIO_PIN_6);
+            vTaskDelay(1000);
+          }
+        }
+        
+5.  创建任务：
+            xTaskCreate(vTask1,"LED",128,NULL,2,NULL);
+            xTaskCreate(vTask2,"JDQ1",128,NULL,2,NULL);
+  
+6.  开启调度器：
+              vTaskStartScheduler();
+        
