@@ -8,15 +8,17 @@ Clion CubeMX
 
 FreeRTOS源码：https://github.com/FreeRTOS/FreeRTOS-Kernel
 
+此工程内包含F1MDK版本与Clion版本，F4MDK版本，自行选择复制到自己的项目里即可
+
 #### 方法
 
 1.  包含头文件：
-               set(USER_INC FreeRTOS_M3_gcc/inc FreeRTOS_M3_gcc/portable/ARM_CM3)
-               set(USER_SRC "FreeRTOS_M3_gcc/portable/ARM_CM3/*.*" "FreeRTOS_M3_gcc/portable/MemMang/*.*" "FreeRTOS_M3_gcc/src/*.*")
+         set(USER_INC FreeRTOS_M3_gcc/inc FreeRTOS_M3_gcc/portable/ARM_CM3)
+         set(USER_SRC "FreeRTOS_M3_gcc/portable/ARM_CM3/*.*" "FreeRTOS_M3_gcc/portable/MemMang/*.*" "FreeRTOS_M3_gcc/src/*.*")
 
 2.  引用头文件：
-                #include "FreeRTOS.h"
-                #include "task.h"
+        #include "FreeRTOS.h"
+        #include "task.h"
 3.  
           stm32f1xx_it.c中添加以下代码：
           #include "FreeRTOS.h"
