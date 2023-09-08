@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="test"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test.elf">
+				<Option output="E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/test.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Inc"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/inc"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/portable/ARM_CM3"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 test.elf"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test.elf/fast">
+				<Option output="E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/test.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F103xB"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Inc"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/inc"/>
+					<Add directory="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/portable/ARM_CM3"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\clion\tools\gcc-arm-none-eabi-10.3-2021.10-win32\gcc-arm-none-eabi-10.3-2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 test.elf/fast"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;E:/CubeMX/clion/FreeRTOS/test/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/CMSIS/LICENSE.txt">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/portable/ARM_CM3/port.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/portable/ARM_CM3/portmacro.h">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/portable/MemMang/heap_4.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/src/croutine.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/src/event_groups.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/src/list.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/src/queue.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/src/stream_buffer.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/src/tasks.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/FreeRTOS_M3_gcc/src/timers.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/STM32F103C8TX_FLASH.ld">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Src/gpio.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Src/main.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Src/stm32f1xx_hal_msp.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Src/stm32f1xx_it.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Src/syscalls.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Src/sysmem.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Src/system_stm32f1xx.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Src/usart.c">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/Startup/startup_stm32f103c8tx.s">
+			<Option target="test.elf"/>
+		</Unit>
+		<Unit filename="E:/CubeMX/clion/FreeRTOS/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
